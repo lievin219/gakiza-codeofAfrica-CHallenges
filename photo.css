@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+   
+}
+
+.thumbnail-container {
+    position: relative;
+    display: flex;
+}
+
+.thumbnail-container img {
+    display: flex;
+    width: 200px;
+    height: 500px;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 40px;
+    align-items: center;
+    border: 1px solid rgb(red, green, blue);
+    border-radius: 20px;
+}
+.thumbnail-container img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    gap:30px;
+    margin-left: 45px;
+   
+    padding: 5px 10px;
+    
+    font-size: 16px;
+    font-weight: bold;
+}
+.overlay-text .heading{
+    color:white;
+    font-style:oblique;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.overlay-text .subheading{
+    color:gray;
+    font-size: 12px;
+}
+
+
+
+ 
+.background-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    font-size:30px ;
+    font-optical-sizing: red;
+   
+    margin-bottom: 50px;
+    border: 10px solid wheat;
+    width: 700px;
+    border-radius: 40px;
+    height: 600px;
+    margin-left: 100px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1000;
+}
+@media (max-width: 600px) {
+    .thumbnail-container img {
+        width: 60px;
+        gap: 5px;
+        border-radius: none;
+        height: 170px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .overlay-text {
+        font-size: 12px;
+        margin-left: 20px;
+        margin-bottom: -30px;
+    }
+    
+    .overlay-text .heading {
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .overlay-text .subheading {
+        font-size: 5px;
+        margin-bottom:10px;
+    }
+
+    .background-overlay {
+        width: 35%;
+        height: 250px;
+        font-size: 14px;
+        margin-left: 5%;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+    .thumbnail-container img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+

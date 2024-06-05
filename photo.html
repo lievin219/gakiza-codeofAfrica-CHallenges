@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Gallery</title>
+    <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+   
+    <div class="thumbnails" id="thumbnails">
+        <div class="thumbnail-container">
+            <img src="./images/li.avif" alt="lion" onclick="showImage('li.avif')">
+          
+            <div class="overlay-text">
+                <div class="heading">Fenec Fox  </div>
+                <div class="subheading">Lion</div>
+            </div>
+        </div>
+        <div class="thumbnail-container">
+            <img src="./images/tiger.webp" alt="sheffard" onclick="showImage('tiger.webp')">
+           
+            <div class="overlay-text"> <div class="heading">HumpBack Whale </div>
+            <div class="subheading">Tiger</div></div>
+        </div>
+        <div class="thumbnail-container">
+            <img src="./images/dog.avif" alt="mouse" onclick="showImage('dog.avif')">
+            
+            <div class="overlay-text">
+                <div class="heading">Common Brown Babbon</div>
+                <div class="subheading">dog</div>
+            </div>
+        </div>
+        <div class="thumbnail-container">
+            <img src="./images/jump.jpg.avif" alt="king-kong" onclick="showImage('jump.jpg.avif')">
+            
+            <div class="overlay-text"> <div class="heading">this is a person jumping </div>
+            <div class="subheading">Human being</div></div>
+        </div>
+        
+        </div>
+    </div>
+    <div id="background-overlay" class="background-overlay" onclick="hideImage()"> click on to hide image</div>
+    
+   
+
+    <script src="photo.js">
+      
+
+
+
+    </script>
+</body>
+</html>
