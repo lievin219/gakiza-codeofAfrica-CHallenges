@@ -1,31 +1,31 @@
-function stringtransform(names){
+function stringtransform(strings){
     let reversed=''
     let  ASCINUMBERS=''
     let bothreverseAndASCI=''
 
   
-    if(names.length%3===0){                    // if the string is divisible by 3 
+    if(strings.length%3===0){                    // if the string is divisible by 3 
        
-          for(let i=names.length -1;i>=0;i--){          // this is a loop of reversing if a string i divisible by three
-     reversed +=names[i]                                // it will return a reversed string 
+          for(let i=strings.length -1;i>=0;i--){          // this is a loop of reversing if a string i divisible by three
+     reversed +=strings[i]                                // it will return a reversed string 
           }
     }
 
 
-      if(names.length%5===0){      //if a string provided is divisibe by five it will make an  ASCII code.
+      if(strings.length%5===0){      //if a string provided is divisibe by five it will make an  ASCII code.
         
-         for(let i=0;i<names.length;i++){
-        ASCINUMBERS +=names[i].codePointAt(0)
+         for(let i=0;i<strings.length;i++){
+        ASCINUMBERS +=strings[i].codePointAt(0)
          }
           
       }
 
 
-        if(names.length%15===0){                      // it checks if string is diviible by both 3 and 5 a
+        if(strings.length%15===0){                      // it checks if string is diviible by both 3 and 5 a
         
-          for(let i=names.length -1;i>=0;i--){         // this will first reverse a string 
+          for(let i=strings.length -1;i>=0;i--){         // this will first reverse a string 
           
-            bothreverseAndASCI +=names.codePointAt(i)   // after reversing a string it will perform Asci operation
+            bothreverseAndASCI +=strings.codePointAt(i)   // after reversing a string it will perform Asci operation
           }
        }
 
@@ -41,5 +41,5 @@ function stringtransform(names){
            return names // if none of conditions occur it will return a name as it is 
        
  }
-  let isName='gakizagakizagak'
-   console.log(stringtransform(isName))
+  let isName='gakasgakasgakas'
+   console.log(stringtransform(isName))// calling our function to check it's functionality
