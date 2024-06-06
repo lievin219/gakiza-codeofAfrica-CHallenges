@@ -10,6 +10,8 @@
             currentsum -=arra[sum]
             sum++
            }
+
+           
       
           if(currentsum===target){ // this if staement will check if the current sum is equal to the target we entered 
             return true    // if condition is true it will return true
@@ -25,5 +27,7 @@
 
 
 
- }const numbers=[1,2,3,4,5]
-  console.log(arraymapping(numbers,15))
+ }
+ 
+ const numbers=[1,2,3,4,5] //an example of a subarray we want to use 
+  console.log(arraymapping(numbers,15))  // calling our function to check it's functionality
