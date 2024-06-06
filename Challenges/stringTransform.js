@@ -24,7 +24,8 @@ function stringtransform(names){
         if(names.length%15===0){                      // it checks if string is diviible by both 3 and 5 a
         
           for(let i=names.length -1;i>=0;i--){         // this will first reverse a string 
-            bothreverseAndASCI +=names[i].codePointAt(0)   // after reversing a string it will perform Asci operation
+          
+            bothreverseAndASCI +=names.codePointAt(i)   // after reversing a string it will perform Asci operation
           }
        }
 
@@ -40,5 +41,5 @@ function stringtransform(names){
            return names // if none of conditions occur it will return a name as it is 
        
  }
-  let isName='ronaldomessiney'
+  let isName='gakizagakizagak'
    console.log(stringtransform(isName))
