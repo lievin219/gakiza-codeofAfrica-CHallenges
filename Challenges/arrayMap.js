@@ -7,7 +7,7 @@
           currentsum=currentsum+arra[i] // this will make a sum of all elements in an array 
            
           while(currentsum>target && sum<=i){ // when the loop reaches where currentsum is greater than target it will start removing an element at the beginning
-            currentsum -=arra[sum]
+            currentsum -=arra[sum]     // this  subtract the element at the sum index from currentsum and increment sum.
             sum++
            }
 
