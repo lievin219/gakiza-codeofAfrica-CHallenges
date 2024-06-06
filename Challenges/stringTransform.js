@@ -12,7 +12,7 @@ function stringtransform(names){
     }
 
 
-      if(names.length%5===0){
+      if(names.length%5===0){      //if a string provided is divisibe by five it will make an  ASCII code.
         
          for(let i=0;i<names.length;i++){
         ASCINUMBERS +=names[i].codePointAt(0)
